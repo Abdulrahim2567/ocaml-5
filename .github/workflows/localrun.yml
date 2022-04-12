@@ -107,7 +107,7 @@ jobs:
           
       - name: test_notebooks
         run: |
-          sudo apt-get update && sudo apt-get -y install wget pkg-config libgmp-dev m4 libdw-dev jq python3-pip jo
+          sudo apt-get update && sudo apt-get -y install wget pkg-config libgmp-dev m4 libdw-dev jq python3-pip markupsafe==2.0.1 jo
           export PATH=$PATH:/home/opam/.local/bin
           pip3 install jupyter nbconvert seaborn pandas
           cd notebooks/sequential
